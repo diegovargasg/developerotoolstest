@@ -1,0 +1,26 @@
+{
+  "name": "Developero tools",
+  "version": "1.0",
+  "description": "helpful developer tools",
+  "permissions": [
+    "http://diego.2e-systems.com:6035/",
+     "*://*.2e-systems.com/*",
+    "activeTab", 
+    "declarativeContent", 
+    "storage"],
+  "manifest_version": 2,
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+  {
+    "matches": ["http://bmieebkgint.2e-systems.com:85/"],
+    "js": ["autocompleteIframe.js"],
+    "all_frames": true
+  }]
+}
