@@ -3,7 +3,6 @@
   "version": "1.0",
   "description": "helpful developer tools",
   "permissions": [
-    "http://diego.2e-systems.com:6035/",
      "*://*.2e-systems.com/*",
     "activeTab", 
     "declarativeContent", 
@@ -19,8 +18,12 @@
   },
   "content_scripts": [
   {
-    "matches": ["http://bmieebkgint.2e-systems.com:85/"],
-    "js": ["autocompleteIframe.js"],
+    "matches": ["*://bmieebkgtest.2e-systems.com/*", "*://bmieebkgint.2e-systems.com/*"],
+    "js": ["sources.js", "autocomplete.js", "iframe.js"],
     "all_frames": true
+  },
+  {
+    "matches": ["*://diego.2e-systems.com/*"],
+    "js": ["sources.js", "autocomplete.js", "noIframe.js"]
   }]
 }
