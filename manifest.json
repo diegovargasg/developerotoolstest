@@ -24,6 +24,6 @@
   },
   {
     "matches": ["*://diego.2e-systems.com/*"],
-    "js": ["sources.js", "autocomplete.js", "noIframe.js"]
+    "js": ["sources.js", "autocomplete.js"]
   }]
 }

@@ -34,8 +34,11 @@ class Autocomplete {
 
   fillSelect() {
     for (var i = 0; i < this.frmSelect.length; i++) {
+      if(this.frmSelect[i].name === 'paymentOption') {
+        continue;
+      }
       const length = this.frmSelect[i].length;
-      const index = Math.floor(Math.random() * (length-1));
+      const index = Math.floor(Math.random() * (length-1) + 1);
 
       this.frmSelect[i][index].selected = true;
       let tracker = this.frmSelect[i]._valueTracker;
