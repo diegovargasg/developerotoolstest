@@ -18,12 +18,14 @@
   },
   "content_scripts": [
   {
-    "matches": ["*://bmieebkgtest.2e-systems.com/*", "*://bmieebkgint.2e-systems.com/*"],
+    "matches": ["*://bmifecli-eepay-test.2e-systems.com/*", 
+                "*://bmifecli-eepay-int.2e-systems.com/*",
+                "*://bmifecli-eepay-pre.2e-systems.com/*"],
     "js": ["sources.js", "autocomplete.js", "iframe.js"],
     "all_frames": true
   },
   {
-    "matches": ["*://diego.2e-systems.com/*"],
+    "matches": ["*://diego.2e-systems.com/*", "*://bmiweb-eebkg-test.2e-systems.com/*", "*://bmiweb-eebkg-int.2e-systems.com/*", "*://bmiweb-eebkg-pre.2e-systems.com/*"],
     "js": ["sources.js", "autocomplete.js"]
   }]
 }
