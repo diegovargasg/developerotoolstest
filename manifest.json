@@ -25,7 +25,7 @@
     "all_frames": true
   },
   {
-    "matches": ["*://diego.2e-systems.com/*", "*://bmiweb-eebkg-test.2e-systems.com/*", "*://bmiweb-eebkg-int.2e-systems.com/*", "*://bmiweb-eebkg-pre.2e-systems.com/*"],
+    "matches": ["*://*.2e-systems.com/*"],
     "js": ["sources.js", "autocomplete.js"]
   }]
 }
