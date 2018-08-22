@@ -10,5 +10,11 @@ const sources = {
   "addressLine1": ["Fake Street 123", "742 Evergreen"],
   "city": ["Bad Soden", "Wiesbaden", "Frankfurt", "Zagreb"],
   "postalCode": ["65812"],
-  "emailAddr": ["diego@2e-systems.com", "diego.vargas@2e-systems.com", "vargas@2e-systems.com"]
+  "emailAddr": ["diego@2e-systems.com", "diego.vargas@2e-systems.com", "vargas@2e-systems.com"],
+  "originCode": ["BRS"],
+  "destinCode": ["ABZ", "FRA", "BRU"],
+  "numAdt": [1, 2, 3],
+  "numChd": [0, 1, 2],
+  "departure": true,
+  "return": true
 };
