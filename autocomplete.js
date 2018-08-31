@@ -30,8 +30,9 @@ class Autocomplete {
 
         today.setMonth(today.getMonth() + (name === "departure" ? 1 : 2));
         const finalMonth = today.getMonth() <= 9 ? "0"+today.getMonth() : today.getMonth();
+        const finalDay   = today.getDate()  <= 9 ? "0"+today.getDate() : today.getDate();
 
-        var value = today.getFullYear()+"-"+finalMonth+"-"+today.getDate();
+        var value = today.getFullYear()+"-"+finalMonth+"-"+finalDay;
       } else {
         var value = this.sources[name][index];  
       }
