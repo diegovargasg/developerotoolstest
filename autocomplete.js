@@ -33,6 +33,11 @@ class Autocomplete {
         const finalDay   = today.getDate()  <= 9 ? "0"+today.getDate() : today.getDate();
 
         var value = today.getFullYear()+"-"+finalMonth+"-"+finalDay;
+      } else if(name === "destinCode" || name === "originCode") {
+        let clientCode  = document.getElementById('search-form').dataset.client;
+        let lengthSource = this.sources[name][clientCode].length;
+        let index = Math.floor(Math.random() * lengthSource);
+        var value = this.sources[name][clientCode][index];
       } else {
         var value = this.sources[name][index];  
       }
