@@ -18,5 +18,6 @@ const sources = {
   "numAdt": [1, 2, 3],
   "numChd": [0, 1, 2],
   "departure": true,
-  "return": true
+  "return": true,
+  "doc": ["1234567890", "0987654321"]
 };
