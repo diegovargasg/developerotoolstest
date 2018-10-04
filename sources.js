@@ -12,12 +12,12 @@ const sources = {
   "postalCode": ["65812"],
   "emailAddr": ["diego@2e-systems.com", "diego.vargas@2e-systems.com", "vargas@2e-systems.com"],
   "originCode": {"BMI": ["BRS"],
-                 "TCV": ["BOS"]},
-  "destinCode": {"BMI": ["ABZ", "FRA", "BRU"],
-                 "TCV": ["ROI"]},
+                 "TCV": ["LIS"]},
+  "destinCode": {"BMI": ["ABZ", "FRA"],
+                 "TCV": ["SID"]},
   "numAdt": [1, 2, 3],
   "numChd": [0, 1, 2],
   "departure": true,
-  "return": true,
+  "return": false,
   "doc": ["1234567890", "0987654321"]
 };

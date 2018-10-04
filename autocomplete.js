@@ -29,8 +29,9 @@ class Autocomplete {
         const today = new Date(year, month, day);
 
         today.setMonth(today.getMonth() + (name === "departure" ? 1 : 2));
-        const finalMonth = today.getMonth() <= 9 ? "0"+today.getMonth() : today.getMonth();
+        var finalMonth = today.getMonth() <= 9 ? "0"+today.getMonth() : today.getMonth();
         const finalDay   = today.getDate()  <= 9 ? "0"+today.getDate() : today.getDate();
+        finalMonth = finalMonth == "00" ? "01" : finalMonth;
 
         var value = today.getFullYear()+"-"+finalMonth+"-"+finalDay;
       } else if(name === "destinCode" || name === "originCode") {
