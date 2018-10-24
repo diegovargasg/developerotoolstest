@@ -18,9 +18,7 @@
   },
   "content_scripts": [
   {
-    "matches": ["*://bmifecli-eepay-test.2e-systems.com/*", 
-                "*://bmifecli-eepay-int.2e-systems.com/*",
-                "*://bmifecli-eepay-pre.2e-systems.com/*"],
+    "matches": ["*://*.2e-systems.com/*"],
     "js": ["sources.js", "autocomplete.js", "iframe.js"],
     "all_frames": true
   },

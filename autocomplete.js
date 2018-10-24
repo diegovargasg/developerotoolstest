@@ -57,7 +57,12 @@ class Autocomplete {
       if(this.frmSelect[i].name === 'paymentOption') {
         continue;
       }
+
       const length = this.frmSelect[i].length;
+      if(length <= 1) {
+        continue;
+      }
+
       const index = Math.floor(Math.random() * (length-1) + 1);
 
       this.frmSelect[i][index].selected = true;
