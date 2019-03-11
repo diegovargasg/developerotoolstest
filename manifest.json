@@ -18,7 +18,12 @@
   },
   "content_scripts": [
   {
-    "matches": ["*://*.2e-systems.com/*"],
+    "matches": ["*://bwa-eepay-int.2e-systems.com/*",
+                "*://bwa-eepay-test.2e-systems.com/*",
+                "*://bwa-eepay-pre.2e-systems.com/*",
+                "*://tcv-eepay-int.2e-systems.com/*",
+                "*://tcv-eepay-test.2e-systems.com/*",
+                "*://tcv-eepay-pre.2e-systems.com/*"],
     "js": ["sources.js", "autocomplete.js", "iframe.js"],
     "all_frames": true
   },
