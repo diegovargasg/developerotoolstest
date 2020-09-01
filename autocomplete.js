@@ -11,9 +11,16 @@ class Autocomplete {
   }
 
   fillInput() {
+
+    const nameExceptions = ["phone_prefix", "phone_number", "fop_street", "fop_city", "fop_postalcode", "card_holder", "card_number", "card_cvc"];
+
     for (var i = 0; i < this.frmInput.length; i++) {
 
-      const name = this.frmInput[i].name.split('_')[0];
+      let name = this.frmInput[i].name.split('_')[0];
+
+      if(nameExceptions.includes(this.frmInput[i].name)) {
+        name = this.frmInput[i].name;
+      }
 
       if(this.frmInput[i].type === "checkbox" || typeof this.sources[name] === 'undefined') {//We avoid checkboxes or undefined values
         continue;
@@ -44,17 +51,18 @@ class Autocomplete {
       }
       
       this.frmInput[i].value = value;
-      let tracker = this.frmInput[i]._valueTracker;
+      //Not needed without ReactJS
+      /*let tracker = this.frmInput[i]._valueTracker;
       if (tracker) {
         tracker.setValue(value);
       }
-      this.frmInput[i].dispatchEvent(this.event);
+      this.frmInput[i].dispatchEvent(this.event);*/
     }
   }
 
   fillSelect() {
     for (var i = 0; i < this.frmSelect.length; i++) {
-      if(this.frmSelect[i].name === 'paymentOption') {
+      if(this.frmSelect[i].name === 'paymentOption' || this.frmSelect[i].name.includes("fqtvtype")) {
         continue;
       }
 
