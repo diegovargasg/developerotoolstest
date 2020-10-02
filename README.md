@@ -7,8 +7,6 @@
 
 ```sh
 $ git clone https://github.com/diegovargasg/developerotoolstest.git
-$ cd imgurAPI
-$ npm run e-install
 ```
 
 - Open chrome://extensions/
