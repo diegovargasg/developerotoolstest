@@ -6,7 +6,7 @@
 - Clone the repository
 
 ```sh
-$ git clone https://github.com/diegovargasg/imgurAPI.git
+$ git clone https://github.com/diegovargasg/developerotoolstest.git
 $ cd imgurAPI
 $ npm run e-install
 ```
